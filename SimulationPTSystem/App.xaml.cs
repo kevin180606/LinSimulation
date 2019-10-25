@@ -25,8 +25,10 @@ namespace SimulationPTSystem
             // 注册导航窗体、页面
             RegisterForNavigation<MainWindow>();
             RegisterForNavigation<MainPage>();
-            RegisterForNavigation<SecondPage>();
+            RegisterForNavigation<ZonesSelectionPage>();
             RegisterForNavigation<ThirdPage>();
+            RegisterForNavigation<TotalDataGridPage>();
+
         }
     }
 }

@@ -18,7 +18,9 @@ namespace SimulationPTSystem.ViewModels
         public ICommand StartCommand { get; }
         public ICommand StopCommand { get; }
 
-        public ICommand NavigateToSecondPageCommand { get; }
+        public ICommand NavigateToTotalPageCommand { get; }
+        public ICommand NavigateToZonePageCommand { get; }
+        
 
         public MainPageViewModel(IModernNavigationService navigationService):base(navigationService)
         {
@@ -40,10 +42,16 @@ namespace SimulationPTSystem.ViewModels
                       _dataConverter = null;
                   }
               });
-            NavigateToSecondPageCommand = new RelayCommand(() =>
+            NavigateToTotalPageCommand = new RelayCommand(() =>
               {
-                  _navigationService.NavigateTo("SecondPage");
+                  _navigationService.NavigateTo("TotalDataGridPage");
               });
+            NavigateToZonePageCommand = new RelayCommand(() =>
+            {
+                _navigationService.NavigateTo("ZonesSelectionPage");
+            });
+
+            
         }
         private void DataConverter_DataReceived(object sender, DataReceivedEventArgs e)
         {

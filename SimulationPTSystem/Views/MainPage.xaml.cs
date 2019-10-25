@@ -25,5 +25,10 @@ namespace SimulationPTSystem.Views
         {
             InitializeComponent();
         }
+
+        private void btnTotal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

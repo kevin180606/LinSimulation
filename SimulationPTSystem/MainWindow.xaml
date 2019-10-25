@@ -8,6 +8,6 @@
         xmlns:navigation="clr-namespace:LinnerToolkit.Desktop.ModernUI.Navigation;assembly=LinnerToolkit.Desktop.ModernUI"
         xmlns:mvvm="clr-namespace:LinnerToolkit.Desktop.Mvvm;assembly=LinnerToolkit.Desktop"
         mc:Ignorable="d"
-        Title="{Binding Title}" mvvm:ViewModelLocator.AutowireViewModel="True" WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" Topmost="True">
+        Title="{Binding Title}" mvvm:ViewModelLocator.AutowireViewModel="True" WindowStyle="None" AllowsTransparency="True" WindowState="Maximized" Topmost="False">
     <mui:ModernFrame navigation:RegionLocator.RegionName="MainRegion"/>
 </Window>

@@ -6,12 +6,20 @@
       xmlns:local="clr-namespace:SimulationPTSystem.Views"
       xmlns:mui="clr-namespace:LinnerToolkit.Desktop.ModernUI.Windows.Controls;assembly=LinnerToolkit.Desktop.ModernUI"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1080" d:DesignWidth="1920" 
       Title="MainPage">
+    
+    <Grid Width="1920" Height="1080" >
+         <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="236*"/>
+            <RowDefinition Height="803*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" Text="课程管理" FontSize="80" VerticalAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Button Content="训练任务管理" FontSize="35" Height="219" HorizontalAlignment="Left" Margin="183,176,0,0" Name="btnZone" Command="{Binding NavigateToZonePageCommand}" VerticalAlignment="Top" Width="573"  Grid.Row="2" />
+        <Button Content="题库编辑" FontSize="35" Height="219" HorizontalAlignment="Left" Margin="1139,169,0,0" Name="btnTotal" Command="{Binding NavigateToTotalPageCommand}" VerticalAlignment="Top" Width="496"  Grid.Row="2" />
+        <Button Content="训练结果查看"  FontSize="35" Height="219" HorizontalAlignment="Left" Margin="186,404,0,0" Name="btnResult" VerticalAlignment="Top" Width="565" Visibility="Hidden" Grid.Row="2"  />
 
-    <Grid>
-        <Button Content="开始读取屏幕" HorizontalAlignment="Left" Margin="335,260,0,0" VerticalAlignment="Top" Width="75" Command="{Binding StartCommand}"/>
-        <Button Content="停止读取屏幕" HorizontalAlignment="Left" Margin="508,260,0,0" VerticalAlignment="Top" Width="75" Command="{Binding StopCommand}"/>
-        <Button Content="跳转SecondPage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="116" Command="{Binding NavigateToSecondPageCommand}" Margin="335,106,0,0" Height="36"/>
     </Grid>
+    
 </mui:NavigationPage>
