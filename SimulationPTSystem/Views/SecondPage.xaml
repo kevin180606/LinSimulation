@@ -10,6 +10,7 @@
       Title="SecondPage">
 
     <Grid>
-        <Button Width="100" Height="50" Content="返回" Command="{Binding GoBackCommand}"/>
+        <Button Width="100" Height="50" Content="返回" Command="{Binding GoBackCommand}" Margin="434,200,266,200"/>
+        <Button Width="100" Height="50" Content="下一页面" Command="{Binding NavigateToThirdPageCommand}" Margin="186,200,514,200"/>
     </Grid>
 </modern:NavigationPage>

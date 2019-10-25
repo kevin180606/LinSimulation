@@ -26,6 +26,7 @@ namespace SimulationPTSystem
             RegisterForNavigation<MainWindow>();
             RegisterForNavigation<MainPage>();
             RegisterForNavigation<SecondPage>();
+            RegisterForNavigation<ThirdPage>();
         }
     }
 }

@@ -88,11 +88,15 @@
     </ApplicationDefinition>
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\SecondPageViewModel.cs" />
+    <Compile Include="ViewModels\ThirdPageViewModel.cs" />
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ThirdPage.xaml.cs">
+      <DependentUpon>ThirdPage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -111,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SecondPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ThirdPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,13 +164,7 @@
     <Content Include="Binaries\LinnerToolkit.Core.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Binaries\LinnerToolkit.Core.pdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Binaries\FirstFloor.ModernUI.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Binaries\FirstFloor.ModernUI.pdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Resource Include="Binaries\FirstFloor.ModernUI.xml">
@@ -172,12 +174,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Binaries\LinnerToolkit.Desktop.ModernUI.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Binaries\LinnerToolkit.Desktop.ModernUI.pdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Binaries\LinnerToolkit.Desktop.pdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Resource Include="Binaries\LinnerToolkit.Core.xml">
