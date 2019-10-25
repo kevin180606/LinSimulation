@@ -1,0 +1,1401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LinnerToolkit.Core</name>
+    </assembly>
+    <members>
+        <member name="T:LinnerToolkit.Core.AsyncLock">
+            <summary>
+            异步锁
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.AsyncLock.ThreadId">
+            <summary>
+            全局线程Id
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.AsyncLock.Lock">
+            <summary>
+            锁定
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.AsyncLock.LockAsync">
+            <summary>
+            异步锁定
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.AsyncLock.LockAsync(System.Threading.CancellationToken)">
+            <summary>
+            异步锁定
+            </summary>
+            <param name="ct">取消操作Token</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.Buffer.BufferUnderflowException">
+            <summary>
+            An exception thrown when a <code>Get</code> operation reaches the source buffer's limit.
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.BufferUnderflowException.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.BufferUnderflowException.#ctor(System.String)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.BufferUnderflowException.#ctor(System.String,System.Exception)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.BufferUnderflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.BufferUnderflowException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Buffer.ByteOrder">
+            <summary>
+            Byte order
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Buffer.ByteOrder.BigEndian">
+            <summary>
+            Big-endian
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Buffer.ByteOrder.LittleEndian">
+            <summary>
+            Little-endian
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Buffer.DataBuffer">
+            <summary>
+            A container for data of a specific primitive type.
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Buffer.DataBuffer.Position">
+            <summary>
+            Gets or sets this buffer's position.
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Buffer.DataBuffer.Remaining">
+            <summary>
+            Gets the number of elements between the current position and the limit.
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Buffer.DataBuffer.HasRemaining">
+            <summary>
+            Tells whether there are any elements between the current position and the limit.
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.DataBuffer.#ctor">
+            <summary>
+            Create a new data buffer.
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Buffer.DataBuffer.Clear">
+            <summary>
+            Clears this buffer.
+            The position is set to zero, the limit is set to the capacity, and the mark is discarded.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.Codec.ByteData">
+            <summary>
+            字节数组类型数据
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Codec.ByteData.Data">
+            <summary>
+            字节数据数组
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Codec.ByteData.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Codec.ByteData.#ctor(System.Byte[])">
+            <summary>
+            带字节数组的构造函数
+            </summary>
+            <param name="data">包含的字节数组</param>
+        </member>
+        <member name="T:LinnerToolkit.Core.Codec.ByteDataDecoder">
+            <summary>
+            字节数组类型解码器
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Codec.ByteDataDecoder.Decode(LinnerToolkit.Core.Buffer.DataBuffer)">
+            <summary>
+            解析数据
+            </summary>
+            <param name="buffer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.Codec.ByteDataEncoder">
+            <summary>
+            字节数组类型编码器
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Codec.ByteDataEncoder.EncodeToByte(LinnerToolkit.Core.Codec.IEncodeData)">
+            <summary>
+            将数据编码为字节数组
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Collections.Generic.DictionaryExtensions.CalcRangeValue``1(System.Collections.Generic.Dictionary{System.Double,``0},System.Double,System.Boolean)">
+            <summary>
+            计算给定值与在区域范围内的返回值
+            </summary>
+            <param name="dictionary"></param>
+            <param name="conditionValue"></param>
+            <param name="smallThan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Collections.Generic.DictionaryExtensions.CalcRangeValue``1(System.Collections.Generic.Dictionary{System.Double,LinnerToolkit.Core.Collections.Generic.RangeValue{``0}},System.Double)">
+            <summary>
+            计算给定值与在区域范围内的返回值
+            </summary>
+            <param name="dictionary"></param>
+            <param name="conditionValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.BLE.BLEEndPoint">
+            <summary>
+            BLE连接参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.BLE.BLEEndPoint.DeviceGuid">
+            <summary>
+            设备Guid
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.BLE.BLEEndPoint.WriteCharacteristicEndPoint">
+            <summary>
+            写入特性参数集合
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.BLE.BLEEndPoint.ReadCharacteristicEndPoint">
+            <summary>
+            读取特性参数集合
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.BLE.BLEEndPoint.NotifyCharacteristicEndPoint">
+            <summary>
+            主动更新特性参数集合
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.BLE.BLEEndPoint.IsEquals(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            比较两个端口是否相同
+            </summary>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.BLE.BLEEndPoint.IsCharacteristicEndPointListEquals(System.Collections.Generic.List{LinnerToolkit.Core.IO.BLE.CharacteristicEndPoint},System.Collections.Generic.List{LinnerToolkit.Core.IO.BLE.CharacteristicEndPoint})">
+            <summary>
+            判断特性参数列表是否相同
+            </summary>
+            <param name="p1"></param>
+            <param name="p2"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.BLE.CharacteristicEndPoint">
+            <summary>
+            特性参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.BLE.CharacteristicEndPoint.ServiceGuid">
+            <summary>
+            服务Guid
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.BLE.CharacteristicEndPoint.CharacteristicGuid">
+            <summary>
+            特性Guid
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.DataProducerBase">
+            <summary>
+            DataProducer基类
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.EndPoint">
+            <summary>
+            连接端口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.DataDecoder">
+            <summary>
+            解码器队列
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.DataEncoder">
+            <summary>
+            编码器队列
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerBase._state">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.State">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.TimeOut">
+            <summary>
+            超时时间, 默认30秒
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.OnTimeOutChanged(System.TimeSpan)">
+            <summary>
+            超时时间更改时触发
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.AutoReconnect">
+            <summary>
+            自动重连，默认自动重连
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.ReconnectInterval">
+            <summary>
+            重连间隔时间, 默认3秒
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerBase.MaxReconnectTime">
+            <summary>
+            最大重连次数, 默认3次
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerBase._currentReconnectTime">
+            <summary>
+            当前重连次数
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerBase._isClosing">
+            <summary>
+            是否已关闭
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.DataProducerBase.DataReceived">
+            <summary>
+            接收数据事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.DataProducerBase.Opened">
+            <summary>
+            连接打开事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.DataProducerBase.Closed">
+            <summary>
+            连接关闭事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.DataProducerBase.StateChanged">
+            <summary>
+            连接状态改变事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.DataProducerBase.ExceptionCaught">
+            <summary>
+            异常触发事件
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.#ctor">
+            <summary>
+            DataProducer基类默认构造函数
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.#ctor(LinnerToolkit.Core.IO.IEndPoint,LinnerToolkit.Core.Codec.IDataDecoder,LinnerToolkit.Core.Codec.IDataEncoder)">
+            <summary>
+            DataProducer包含端口信息、解码类、编码类的构造函数
+            </summary>
+            <param name="endPoint"></param>
+            <param name="dataDecoder"></param>
+            <param name="dataEncoder"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.Reset(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            重置端口
+            </summary>
+            <param name="endPoint"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.InitializeEndPoint(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            初始化端口
+            </summary>
+            <param name="endPoint"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.InitializeConnector">
+            <summary>
+            初始化连接器
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.Open">
+            <summary>
+            打开连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.InnerOpen">
+            <summary>
+            内部打开连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.Close">
+            <summary>
+            关闭连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.InnerClose">
+            <summary>
+            内部关闭连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.AddDecoder(LinnerToolkit.Core.Codec.IDataDecoder)">
+            <summary>
+            添加解码器
+            </summary>
+            <param name="dataDecoder"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.AddEncoder(LinnerToolkit.Core.Codec.IDataEncoder)">
+            <summary>
+            添加编码器
+            </summary>
+            <param name="dataEncoder"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.Send(LinnerToolkit.Core.Codec.IEncodeData)">
+            <summary>
+            发送数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.RaiseOpenedEvent">
+            <summary>
+            调用连接打开事件
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.RaiseClosedEvent(System.Boolean)">
+            <summary>
+            调用连接关闭事件
+            </summary>
+            <param name="manualClose">是否手动关闭</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.Reconnect">
+            <summary>
+            重新连接
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.RaiseExceptionCaught(System.Exception)">
+            <summary>
+            调用异常事件
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerBase.RaiseDataReceivedEvent(LinnerToolkit.Core.Codec.IDecodeData)">
+            <summary>
+            触发数据接收事件
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.DataProducerState">
+            <summary>
+            DataProducer连接状态
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerState.Disconnected">
+            <summary>
+            已断开
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerState.Connecting">
+            <summary>
+            连接中
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerState.Connected">
+            <summary>
+            已连接
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.DataProducerState.Disconnecting">
+            <summary>
+            断开连接中
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.EndPointBase">
+            <summary>
+            Io端口基类
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.EndPointBase._title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.EndPointBase.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.EndPointBase._name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.EndPointBase.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.EndPointBase.IsEquals(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            比较两个端口是否相同
+            </summary>
+            <param name="endPoint">要比较的端口</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.IDataProducer">
+            <summary>
+            DataProducer接口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducer.EndPoint">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducer.State">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducer.TimeOut">
+            <summary>
+            连接超时时间
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducer.AutoReconnect">
+            <summary>
+            自动重连
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducer.ReconnectInterval">
+            <summary>
+            重连间隔时间
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducer.MaxReconnectTime">
+            <summary>
+            最大重连次数
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducer.Reset(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            重置端口
+            </summary>
+            <param name="endPoint"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducer.Open">
+            <summary>
+            打开连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducer.Close">
+            <summary>
+            关闭连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducer.AddDecoder(LinnerToolkit.Core.Codec.IDataDecoder)">
+            <summary>
+            添加解码器
+            </summary>
+            <param name="dataDecoder"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducer.AddEncoder(LinnerToolkit.Core.Codec.IDataEncoder)">
+            <summary>
+            添加编码器
+            </summary>
+            <param name="dataEncoder"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducer.Send(LinnerToolkit.Core.Codec.IEncodeData)">
+            <summary>
+            发送数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.IDataProducer.Opened">
+            <summary>
+            连接打开事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.IDataProducer.Closed">
+            <summary>
+            连接关闭事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.IDataProducer.DataReceived">
+            <summary>
+            数据接收事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.IDataProducer.StateChanged">
+            <summary>
+            连接状态改变事件
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.IDataProducer.ExceptionCaught">
+            <summary>
+            异常触发事件
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.DataReceivedEventHandler">
+            <summary>
+            表示处理数据接收事件的方法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.DataProducerStateChangedEventHandler">
+            <summary>
+            表示处理连接状态改变事件的方法
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.DataProducerStateChangedEventArgs">
+            <summary>
+            连接状态改变事件参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerStateChangedEventArgs.OldState">
+            <summary>
+            旧状态
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataProducerStateChangedEventArgs.NewState">
+            <summary>
+            新状态
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataProducerStateChangedEventArgs.#ctor(LinnerToolkit.Core.IO.DataProducerState,LinnerToolkit.Core.IO.DataProducerState)">
+            <summary>
+            连接状态改变事件参数默认构造函数
+            </summary>
+            <param name="oldState">旧状态</param>
+            <param name="newState">新状态</param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.DataReceivedEventArgs">
+            <summary>
+            数据接收事件参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.DataReceivedEventArgs.Data">
+            <summary>
+            解码数据
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.DataReceivedEventArgs.#ctor(LinnerToolkit.Core.Codec.IDecodeData)">
+            <summary>
+            数据接收事件参数默认构造函数
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.IoExceptionEventArgs">
+            <summary>
+            异常触发事件参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IoExceptionEventArgs.Exception">
+            <summary>
+            触发的异常
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IoExceptionEventArgs.#ctor(System.Exception)">
+            <summary>
+            异常触发事件默认构造函数
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.IDataProducerManager">
+            <summary>
+            DataProducer管理器接口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducerManager.Sessions">
+            <summary>
+            搜索到的端口信息列表
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IDataProducerManager.IsScanning">
+            <summary>
+            是否正在扫描
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducerManager.StartScanAsync(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            开始异步搜索
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IDataProducerManager.StopScanAsync">
+            <summary>
+            停止异步搜索
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:LinnerToolkit.Core.IO.IDataProducerManager.SessionUpdated">
+            <summary>
+            更新端口事件，在搜索到Session后触发
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.SessionUpdateEventArgs">
+            <summary>
+            更新端口事件参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.SessionUpdateEventArgs.Session">
+            <summary>
+            更新的端口信息
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.SessionUpdateEventArgs.#ctor(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="session">更新的端口信息</param>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.IEndPoint">
+            <summary>
+            Io端口接口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IEndPoint.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.IEndPoint.Name">
+            <summary>
+            端口名称
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.IEndPoint.IsEquals(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            比较两个端口是否相同
+            </summary>
+            <param name="endPoint">要比较的端口</param>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.Serial.LParity">
+            <summary>
+            奇偶校验位
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LParity.None">
+            <summary>
+            没有奇偶校验检查时发生
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LParity.Odd">
+            <summary>
+            设置奇偶校验位，以便设置了位数为奇数
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LParity.Even">
+            <summary>
+            设置奇偶校验位，以便设置了位的计数为偶数
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LParity.Mark">
+            <summary>
+            将奇偶校验位设置为 1
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LParity.Space">
+            <summary>
+            将奇偶校验位设置为 0
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LParity.NotSet">
+            <summary>
+            未设置奇偶校验位
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.Serial.LStopBits">
+            <summary>
+            指定停止上使用的比特数
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LStopBits.None">
+            <summary>
+            使用没有停止位。 不支持此值
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LStopBits.One">
+            <summary>
+            使用一个停止位
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LStopBits.Two">
+            <summary>
+            使用两个停止位
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LStopBits.OnePointFive">
+            <summary>
+            使用 1.5 停止位
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.Serial.LStopBits.NotSet">
+            <summary>
+            未设置停止位
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.Serial.SerialEndPoint">
+            <summary>
+            串口数据端口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Serial.SerialEndPoint.DeviceName">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Serial.SerialEndPoint.PortName">
+            <summary>
+            串口号
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Serial.SerialEndPoint.BaudRate">
+            <summary>
+            波特率 
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Serial.SerialEndPoint.Parity">
+            <summary>
+            奇偶校验位
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Serial.SerialEndPoint.DataBits">
+            <summary>
+            数据位
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Serial.SerialEndPoint.StopBits">
+            <summary>
+            停止位
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.Serial.SerialEndPoint.#ctor">
+            <summary>
+            默认构造函数
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.Serial.SerialEndPoint.#ctor(System.String,System.Int32,LinnerToolkit.Core.IO.Serial.LParity,System.Int32,LinnerToolkit.Core.IO.Serial.LStopBits)">
+            <summary>
+            串口端口构造函数
+            </summary>
+            <param name="portName">串口号</param>
+            <param name="baudRate">波特率</param>
+            <param name="parity">奇偶校验位</param>
+            <param name="dataBits">数据位</param>
+            <param name="stopBits">停止位</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.Serial.SerialEndPoint.IsEquals(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            比较两个串口数据端口是否相同
+            </summary>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.SimulationDataProducerBase.Close">
+            <summary>
+            关闭连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.SimulationEndPoint">
+            <summary>
+            模拟数据端口
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.IO.SimulationEndPoint.DEFAULT_INTERVAL">
+            <summary>
+            默认的时间间隔
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.SimulationEndPoint.Interval">
+            <summary>
+            时间间隔
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.SimulationEndPoint.#ctor(System.Double)">
+            <summary>
+            默认构造函数
+            </summary>
+            <param name="interval"></param>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.SimulationEndPoint.IsEquals(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            比较两个模拟数据端口是否相同
+            </summary>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.Sockets.UdpClientDataProducer.InnerClose">
+            <summary>
+            内部关闭连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.IO.Sockets.UdpClientEndPoint">
+            <summary>
+            UDP客户端端口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Sockets.UdpClientEndPoint.IPAddress">
+            <summary>
+            服务端IP地址
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Sockets.UdpClientEndPoint.RemotePort">
+            <summary>
+            服务端端口号
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.IO.Sockets.UdpClientEndPoint.LocalPort">
+            <summary>
+            本地端口号
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.IO.Sockets.UdpClientEndPoint.IsEquals(LinnerToolkit.Core.IO.IEndPoint)">
+            <summary>
+            比较两个UDP客户端端口是否相同
+            </summary>
+            <param name="endPoint"></param>
+            <returns></returns>
+        </member>
+        <member name="E:LinnerToolkit.Core.Mvvm.NotifyPropertyChanged.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.NotifyPropertyChanged.SetProperty``1(``0@,``0,System.String)">
+            <summary>
+            Checks if a property already matches a desired value. Sets the property and
+            notifies listeners only when necessary.
+            </summary>
+            <typeparam name="T">Type of the property.</typeparam>
+            <param name="storage">Reference to a property with both getter and setter.</param>
+            <param name="value">Desired value for the property.</param>
+            <param name="propertyName">Name of the property used to notify listeners. This
+            value is optional and can be provided automatically when invoked from compilers that
+            support CallerMemberName.</param>
+            <returns>True if the value was changed, false if the existing value matched the
+            desired value.</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.NotifyPropertyChanged.SetProperty``1(``0@,``0,System.Action,System.String)">
+            <summary>
+            Checks if a property already matches a desired value. Sets the property and
+            notifies listeners only when necessary.
+            </summary>
+            <typeparam name="T">Type of the property.</typeparam>
+            <param name="storage">Reference to a property with both getter and setter.</param>
+            <param name="value">Desired value for the property.</param>
+            <param name="propertyName">Name of the property used to notify listeners. This
+            value is optional and can be provided automatically when invoked from compilers that
+            support CallerMemberName.</param>
+            <param name="onChanged">Action that is called after the property value has been changed.</param>
+            <returns>True if the value was changed, false if the existing value matched the
+            desired value.</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.NotifyPropertyChanged.RaisePropertyChanged(System.String)">
+            <summary>
+            Raises this object's PropertyChanged event.
+            </summary>
+            <param name="propertyName">Name of the property used to notify listeners. This
+            value is optional and can be provided automatically when invoked from compilers
+            that support <see cref="T:System.Runtime.CompilerServices.CallerMemberNameAttribute"/>.</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.NotifyPropertyChanged.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Raises this object's PropertyChanged event.
+            </summary>
+            <param name="args">The PropertyChangedEventArgs</param>
+        </member>
+        <member name="T:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider">
+            <summary>
+            The ViewModelLocationProvider class locates the view model for the view that has the AutoWireViewModelChanged attached property set to true.
+            The view model will be located and injected into the view's DataContext. To locate the view, two strategies are used: First the ViewModelLocationProvider
+            will look to see if there is a view model factory registered for that view, if not it will try to infer the view model using a convention based approach.
+            This class also provide methods for registering the view model factories,
+            and also to override the default view model factory and the default view type to view model type resolver.
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider._factories">
+            <summary>
+            A dictionary that contains all the registered factories for the views.
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider._typeFactories">
+            <summary>
+            A dictionary that contains all the registered ViewModel types for the views.
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider._defaultViewModelFactory">
+            <summary>
+            The default view model factory which provides the ViewModel type as a parameter.
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider._defaultViewModelFactoryWithViewParameter">
+            <summary>
+            ViewModelfactory that provides the View instance and ViewModel type as parameters.
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider._defaultViewTypeToViewModelTypeResolver">
+            <summary>
+            Default view type to view model type resolver, assumes the view model is in same assembly as the view type, but in the "ViewModels" namespace.
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.SetDefaultViewModelFactory(System.Func{System.Type,System.Object})">
+            <summary>
+            Sets the default view model factory.
+            </summary>
+            <param name="viewModelFactory">The view model factory which provides the ViewModel type as a parameter.</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.SetDefaultViewModelFactory(System.Func{System.Object,System.Type,System.Object})">
+            <summary>
+            Sets the default view model factory.
+            </summary>
+            <param name="viewModelFactory">The view model factory that provides the View instance and ViewModel type as parameters.</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.SetDefaultViewTypeToViewModelTypeResolver(System.Func{System.Type,System.Type})">
+            <summary>
+            Sets the default view type to view model type resolver.
+            </summary>
+            <param name="viewTypeToViewModelTypeResolver">The view type to view model type resolver.</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.GetViewModelFromView(System.Object)">
+            <summary>
+            Gets the view model for the specified view.
+            </summary>
+            <param name="view">The view that the view model wants.</param>
+            <returns>The ViewModel that corresponds to the view passed as a parameter.</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.GetViewModelTypeForView(System.Type)">
+            <summary>
+            Gets the ViewModel type for the specified view.
+            </summary>
+            <param name="view">The View that the ViewModel wants.</param>
+            <returns>The ViewModel type that corresponds to the View.</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.Register``1(System.Func{System.Object})">
+            <summary>
+            Registers the ViewModel factory for the specified view type.
+            </summary>
+            <typeparam name="T">The View</typeparam>
+            <param name="factory">The ViewModel factory.</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.Register(System.String,System.Func{System.Object})">
+            <summary>
+            Registers the ViewModel factory for the specified view type name.
+            </summary>
+            <param name="viewTypeName">The name of the view type.</param>
+            <param name="factory">The ViewModel factory.</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.Register``2">
+            <summary>
+            Registers a ViewModel type for the specified view type.
+            </summary>
+            <typeparam name="T">The View</typeparam>
+            <typeparam name="VM">The ViewModel</typeparam>
+        </member>
+        <member name="M:LinnerToolkit.Core.Mvvm.ViewModelLocatorProvider.Register(System.String,System.Type)">
+            <summary>
+            Registers a ViewModel type for the specified view.
+            </summary>
+            <param name="viewTypeName">The View type name</param>
+            <param name="viewModelType">The ViewModel type</param>
+        </member>
+        <member name="T:LinnerToolkit.Core.Net.DownloadBytesProgress">
+            <summary>
+            下载字节处理
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.DownloadBytesProgress.TotalBytes">
+            <summary>
+            全部字节数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.DownloadBytesProgress.BytesReceived">
+            <summary>
+            接收到的字节数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.DownloadBytesProgress.PercentComplete">
+            <summary>
+            完成百分比
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.DownloadBytesProgress.Filename">
+            <summary>
+            下载文件名称
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.DownloadBytesProgress.IsFinished">
+            <summary>
+            是否已完成
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.IDownloadService.TotalBytes">
+            <summary>
+            全部字节数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.IDownloadService.BytesReceived">
+            <summary>
+            接收到的字节数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.IDownloadService.PercentComplete">
+            <summary>
+            完成百分比
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.IDownloadService.Filename">
+            <summary>
+            下载文件名称
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.IDownloadService.IsFinished">
+            <summary>
+            是否已完成
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.PercentCompleteChangedEventArgs.TotalBytes">
+            <summary>
+            全部字节数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.PercentCompleteChangedEventArgs.BytesReceived">
+            <summary>
+            接收到的字节数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.PercentCompleteChangedEventArgs.PercentComplete">
+            <summary>
+            完成百分比
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.PercentCompleteChangedEventArgs.Filename">
+            <summary>
+            下载文件名称
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Net.PercentCompleteChangedEventArgs.IsFinished">
+            <summary>
+            是否已完成
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.ICrashHandlerService">
+            <summary>
+            崩溃异常处理服务接口
+            </summary>
+        </member>
+        <member name="E:LinnerToolkit.Core.Services.ICrashHandlerService.ExceptionCaught">
+            <summary>
+            异常捕获事件
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.ExceptionCaughtEventArgs">
+            <summary>
+            包含异常捕获事件参数
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Services.ExceptionCaughtEventArgs.Exception">
+            <summary>
+            捕获的异常
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Services.ExceptionCaughtEventArgs.Cancel">
+            <summary>
+            是否取消后续操作
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ExceptionCaughtEventArgs.#ctor(System.Exception,System.Boolean)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="ex">捕获的异常</param>
+            <param name="cancel">是否取消后续操作</param>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.IFileService">
+            <summary>
+            文件服务接口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Services.IFileService.PublicAppDataDirectory">
+            <summary>
+            程序的公开数据目录
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.IKeepLiveService">
+            <summary>
+            后台保活服务接口
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Services.IKeepLiveService.Title">
+            <summary>
+            显示标题
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.Core.Services.IKeepLiveService.Content">
+            <summary>
+            显示内容
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.IKeepLiveService.Start">
+            <summary>
+            开始保活
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.IKeepLiveService.Stop">
+            <summary>
+            停止保活
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.ILogService">
+            <summary>
+            日志服务接口
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.WriteDebug(System.String)">
+            <summary>
+            写入调试日志信息
+            </summary>
+            <param name="debugMessage">调试日志信息</param>
+            <returns>写入的日志信息，为空说明未成功写入</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.WriteInfo(System.String)">
+            <summary>
+            写入信息日志
+            </summary>
+            <param name="info">要写入的信息</param>
+            <returns>写入的日志信息，为空说明未成功写入</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.WriteWarn(System.String)">
+            <summary>
+            写入警告日志信息
+            </summary>
+            <param name="warn">警告日志信息</param>
+            <returns>写入的日志信息，为空说明未成功写入</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.WriteError(System.Exception,System.String)">
+            <summary>
+            写入错误日志信息
+            </summary>
+            <param name="ex">抛出的异常</param>
+            <param name="handler">由哪个模块处理</param>
+            <returns>写入的日志信息，为空说明未成功写入</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.WriteLog(LinnerToolkit.Core.Services.LogLevel,System.String)">
+            <summary>
+            写入日志信息
+            </summary>
+            <param name="logLevel">日志级别</param>
+            <param name="message">日志信息</param>
+            <returns>写入的日志信息，为空说明未成功写入</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.GetLogs(LinnerToolkit.Core.Services.LogLevel)">
+            <summary>
+            获取日志信息集合
+            </summary>
+            <param name="logLevel">日志信息级别</param>
+            <returns>获取到的日志信息集合</returns>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.ILogService.DeleteLogs(LinnerToolkit.Core.Services.LogLevel)">
+            <summary>
+            删除日志信息
+            </summary>
+            <param name="logLevel">日志信息级别</param>
+            <returns>是否成功删除</returns>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.LogLevel">
+            <summary>
+            日志级别
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Services.LogLevel.Debug">
+            <summary>
+            调试
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Services.LogLevel.Info">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Services.LogLevel.Warn">
+            <summary>
+            警告
+            </summary>
+        </member>
+        <member name="F:LinnerToolkit.Core.Services.LogLevel.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.IMessageBoxService">
+            <summary>
+            消息框服务
+            </summary>
+        </member>
+        <member name="T:LinnerToolkit.Core.Services.INotifyService">
+            <summary>
+            通知服务接口
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.INotifyService.Long(System.String)">
+            <summary>
+             长时间显示
+            </summary>
+            <param name="message">要显示的消息</param>
+        </member>
+        <member name="M:LinnerToolkit.Core.Services.INotifyService.Short(System.String)">
+            <summary>
+            短时间显示
+            </summary>
+            <param name="message">要显示的消息</param>
+        </member>
+        <member name="P:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.BYTE_HEADER">
+            <summary>
+            字节型帧头
+            </summary>
+        </member>
+        <member name="P:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.BYTE_END">
+            <summary>
+            字节型帧尾
+            </summary>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckByte(LinnerToolkit.Core.Buffer.DataBuffer,System.Byte)">
+            <summary>
+            检查单个数据
+            </summary>
+            <param name="buffer"></param>
+            <param name="checkSum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckHeader(LinnerToolkit.Core.Buffer.DataBuffer,System.Byte)">
+            <summary>
+            检查数据头
+            </summary>
+            <param name="buffer"></param>
+            <param name="header"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckHeader(LinnerToolkit.Core.Buffer.DataBuffer,System.Byte[])">
+            <summary>
+            检查数据头
+            </summary>
+            <param name="buffer"></param>
+            <param name="header"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckHeader(LinnerToolkit.Core.Buffer.DataBuffer,System.Collections.Generic.List{System.Byte[]})">
+            <summary>
+            检查数据头
+            </summary>
+            <param name="buffer"></param>
+            <param name="headers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.NeedData(LinnerToolkit.Core.Buffer.DataBuffer,System.Collections.Generic.List{System.Byte[]},System.Int32)">
+            <summary>
+            是否需要更多数据
+            </summary>
+            <param name="buffer"></param>
+            <param name="headers"></param>
+            <param name="indexHeader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckChar(LinnerToolkit.Core.Buffer.DataBuffer,System.Char)">
+            <summary>
+            检查单个字符
+            </summary>
+            <param name="buffer"></param>
+            <param name="checkSum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckChar(LinnerToolkit.Core.Buffer.DataBuffer,System.Int32,System.Char)">
+            <summary>
+            检查指定位置的字符
+            </summary>
+            <param name="buffer"></param>
+            <param name="index"></param>
+            <param name="checkSum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckCharE(LinnerToolkit.Core.Buffer.DataBuffer,System.Char)">
+            <summary>
+            检查单个字符
+            </summary>
+            <param name="buffer"></param>
+            <param name="checkSum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckCharE(LinnerToolkit.Core.Buffer.DataBuffer,System.Int32,System.Char)">
+            <summary>
+            检查指定位置的字符
+            </summary>
+            <param name="buffer"></param>
+            <param name="index"></param>
+            <param name="checkSum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckHeader(LinnerToolkit.Core.Buffer.DataBuffer,System.Char,System.Boolean)">
+            <summary>
+            检查数据头
+            </summary>
+            <param name="buffer"></param>
+            <param name="header"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckHeader(LinnerToolkit.Core.Buffer.DataBuffer,System.String,System.Boolean)">
+            <summary>
+            检查数据头
+            </summary>
+            <param name="buffer"></param>
+            <param name="header"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LinnerToolkit.MindBody.Core.Codec.DataDecoderBase.CheckEnd(System.Byte[],System.Byte[])">
+            <summary>
+            检查数据尾
+            </summary>
+            <param name="bytes">要检查的数组</param>
+            <param name="end">数据尾</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
